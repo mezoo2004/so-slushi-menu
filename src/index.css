@@ -1,0 +1,649 @@
+@import "tailwindcss";
+
+@theme {
+  --color-copid-bg: #050505;
+  --color-copid-sheet: #101010;
+  --color-copid-accent: #f7f1e8;
+  --color-copid-accent-soft: #e7c995;
+  --color-copid-price: #d8b27a;
+  --color-copid-muted: #a79c8d;
+  --color-copid-page: #050505;
+  --color-copid-deep: #101010;
+  --font-arabic: "IBM Plex Sans Arabic", "Cairo", sans-serif;
+  --font-display: "Playfair Display", Georgia, serif;
+  --font-ui: "Cairo", "IBM Plex Sans Arabic", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  margin: 0;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: clip;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  max-width: 100%;
+  min-height: 100dvh;
+  overflow-x: clip;
+  font-family: var(--font-ui);
+  background: var(--color-copid-page);
+  color: var(--color-copid-accent);
+}
+
+#root {
+  margin: 0;
+  width: 100%;
+  max-width: 100%;
+  min-height: 100dvh;
+  overflow-x: clip;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+}
+
+.menu-shell {
+  width: 100%;
+  max-width: 720px;
+  margin-inline: auto;
+  min-height: 100dvh;
+  min-width: 0;
+  background: var(--color-copid-bg);
+  color: var(--color-copid-accent);
+  position: relative;
+  overflow-x: clip;
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+.no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.category-nav-sticky {
+  position: sticky;
+  top: env(safe-area-inset-top, 0px);
+  z-index: 40;
+  background: var(--color-copid-bg);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+}
+
+.category-pill.active .category-icon-circle {
+  outline: 2px solid var(--color-copid-price);
+  outline-offset: 2px;
+}
+
+.category-icon-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 58%;
+  transform: scale(1.28);
+  border-radius: 50%;
+  display: block;
+}
+
+.category-icon-photo--chicken-burgers {
+  object-position: 50% 56%;
+  transform: scale(1.48);
+}
+
+.category-icon-photo--beef-burgers {
+  object-position: 50% 54%;
+  transform: scale(1.42);
+}
+
+.category-icon-photo--ribs-steaks {
+  object-position: 48% 52%;
+  transform: scale(1.18);
+}
+
+.category-icon-photo--appetizers {
+  object-fit: cover;
+  object-position: 36% 58%;
+  transform: scale(1.22);
+}
+
+.category-icon-photo--sides-salads {
+  object-position: 50% 55%;
+  transform: scale(1.35);
+}
+
+.category-icon-photo--sliders {
+  object-position: 50% 52%;
+  transform: scale(1.35);
+}
+
+.category-icon-photo--wraps {
+  object-position: 50% 58%;
+  transform: scale(1.22);
+}
+
+.category-icon-photo--sauces {
+  object-position: 50% 50%;
+  transform: scale(1.45);
+}
+
+.price-line {
+  display: block;
+  color: var(--color-copid-price);
+  font-size: 0.92rem;
+  font-weight: 700;
+  line-height: 1.35;
+  letter-spacing: 0.01em;
+}
+
+.calorie-label {
+  margin-top: 0.35rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.72rem;
+  line-height: 1.3;
+  color: rgba(167, 156, 141, 0.92);
+  font-weight: 500;
+}
+
+.calorie-dot {
+  width: 5px;
+  height: 5px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #5b8fd4;
+  box-shadow: 0 0 0 2px rgba(91, 143, 212, 0.16);
+}
+
+.product-desc {
+  font-family: var(--font-arabic);
+}
+
+html[lang="en"] .product-desc {
+  font-family: var(--font-ui);
+}
+
+.sheet-panel {
+  background: var(--color-copid-sheet);
+  border-radius: 1.5rem 1.5rem 0 0;
+  min-height: 50dvh;
+  padding-bottom: calc(2.5rem + env(safe-area-inset-bottom, 0px));
+  min-width: 0;
+  overflow-x: clip;
+}
+
+.sheet-handle {
+  width: 2.5rem;
+  height: 0.28rem;
+  border-radius: 999px;
+  background: rgba(216, 178, 122, 0.4);
+  margin: 0.75rem auto 0.5rem;
+}
+
+.product-image {
+  width: 132px;
+  height: 132px;
+  max-width: 38vw;
+  max-height: 38vw;
+  border-radius: 1.05rem;
+  object-fit: cover;
+  flex-shrink: 0;
+  background: #171717;
+}
+
+.product-image-frame {
+  display: block;
+  overflow: hidden;
+  padding: 0;
+  border: 1px solid rgba(216, 178, 122, 0.22);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.28);
+}
+
+.product-image-frame .product-image-zoom {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  max-height: none;
+  object-fit: cover;
+  object-position: center 55%;
+  transform: none;
+  border-radius: 0;
+  background: transparent;
+}
+
+.frame-burger .product-image-zoom,
+.product-image-zoom--burger-slushi,
+.product-image-zoom--classic-crunchy,
+.product-image-zoom--maple-crunchy,
+.product-image-zoom--grilled-chicken,
+.product-image-zoom--classic-beef,
+.product-image-zoom--slushi-mushroom,
+.product-image-zoom--cherry-beef,
+.product-image-zoom--slushi-smash,
+.product-image-zoom--brisket-sandwich,
+.product-image-zoom--signature-beef,
+.product-image-zoom--arugula-pomegranate-burger,
+.product-image-zoom--ribs-beef-burger {
+  object-fit: cover;
+  object-position: 50% 56%;
+  transform: scale(1.06);
+}
+
+.frame-slider .product-image-zoom,
+.product-image-zoom--slider-beef,
+.product-image-zoom--slider-chicken {
+  object-fit: cover;
+  object-position: 50% 54%;
+  transform: none;
+}
+
+.frame-slider-mix .product-image-zoom,
+.product-image-zoom--slider-mix {
+  object-fit: cover;
+  object-position: 50% 58%;
+  transform: none;
+}
+
+.frame-salad .product-image-zoom,
+.product-image-zoom--arugula-pomegranate-salad,
+.product-image-zoom--slushi-feta-salad {
+  object-fit: contain;
+  object-position: 48% 58%;
+  transform: none;
+  background: #080808;
+}
+
+.frame-steak .product-image-zoom,
+.product-image-zoom--tenderloin-steak,
+.product-image-zoom--ribeye-steak {
+  object-fit: contain;
+  object-position: 48% 52%;
+  transform: none;
+  background: #080808;
+}
+
+.frame-plate .product-image-zoom,
+.product-image-zoom--ribs,
+.product-image-zoom--slushi-fries,
+.product-image-zoom--jalapeno-fries,
+.product-image-zoom--brisket-fries,
+.product-image-zoom--french-fries,
+.product-image-zoom--wrap {
+  object-fit: cover;
+  object-position: 50% 58%;
+  transform: none;
+}
+
+.frame-shrimp.product-image {
+  width: 158px;
+  max-width: 46vw;
+}
+
+.frame-shrimp .product-image-zoom,
+.product-image-zoom--dynamite-shrimp {
+  object-fit: cover;
+  object-position: 40% 62%;
+  transform: none;
+  background: #050505;
+}
+
+.product-placeholder {
+  width: 132px;
+  height: 132px;
+  max-width: 38vw;
+  max-height: 38vw;
+  flex-shrink: 0;
+  border-radius: 1.05rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  background:
+    radial-gradient(circle at 50% 38%, rgba(216, 178, 122, 0.16), transparent 58%),
+    #101010;
+  border: 1px solid rgba(216, 178, 122, 0.28);
+}
+
+.product-placeholder-mark {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1px solid rgba(216, 178, 122, 0.45);
+}
+
+.product-placeholder-label {
+  font-size: 0.62rem;
+  letter-spacing: 0.04em;
+  color: var(--color-copid-price);
+  text-align: center;
+  padding-inline: 0.4rem;
+  line-height: 1.25;
+}
+
+.cover-frame {
+  position: relative;
+  width: 100%;
+  height: clamp(168px, 46vw, 248px);
+  min-height: 160px;
+  max-height: 248px;
+  overflow: hidden;
+  background: #050505;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cover-photo {
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+  object-position: 46% 68%;
+  display: block;
+}
+
+.cover-vignette {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(5, 5, 5, 0.18) 0%, transparent 28%, transparent 52%, rgba(5, 5, 5, 0.82) 100%),
+    radial-gradient(ellipse at 50% 100%, rgba(5, 5, 5, 0.4), transparent 55%);
+  pointer-events: none;
+}
+
+.menu-profile-btn {
+  top: max(0.65rem, env(safe-area-inset-top, 0px));
+}
+
+.logo-badge-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: -44px;
+  position: relative;
+  z-index: 3;
+}
+
+.logo-96 {
+  position: relative;
+  width: 92px;
+  height: 92px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #050505;
+  border: 1.5px solid rgba(216, 178, 122, 0.88);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.45);
+}
+
+.logo-96::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 28%;
+  background: linear-gradient(to top, #050505 8%, transparent 100%);
+  pointer-events: none;
+}
+
+.logo-96-crop {
+  width: 112%;
+  height: 112%;
+  max-width: none;
+  object-fit: cover;
+  object-position: 50% 22%;
+  margin-inline-start: -6%;
+  margin-top: 6%;
+}
+
+.brand-section {
+  position: relative;
+}
+
+.brand-agave-clip {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.brand-agave {
+  position: absolute;
+  right: -80px;
+  bottom: -90px;
+  width: 280px;
+  height: 280px;
+  background: radial-gradient(circle at center, rgba(216, 178, 122, 0.16), transparent 68%);
+  pointer-events: none;
+}
+
+.brand-section-content {
+  position: relative;
+  z-index: 1;
+}
+
+.brand-lockup {
+  text-align: center;
+  padding: 0.35rem 0 0.55rem;
+}
+
+.welcome-heading {
+  text-align: center;
+  line-height: 1.15;
+}
+
+.welcome-heading-en {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  font-size: 1.7rem;
+  color: var(--color-copid-accent);
+}
+
+.brand-ar {
+  margin: 0.15rem 0 0;
+  font-family: var(--font-arabic);
+  font-size: 0.95rem;
+  color: var(--color-copid-price);
+}
+
+.brand-tag {
+  margin: 0.15rem 0 0;
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-copid-muted);
+}
+
+.sauce-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.55rem;
+  padding: 0 0.85rem;
+}
+
+.sauce-card {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 0.85rem;
+  border: 1px solid rgba(216, 178, 122, 0.18);
+  background: #0c0c0c;
+  padding: 0.45rem 0.6rem;
+}
+
+.sauce-thumb {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 0.55rem;
+  background: #050505;
+  border: 1px solid rgba(216, 178, 122, 0.18);
+}
+
+.sauce-thumb-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+  transform: scale(1.35);
+}
+
+.sauce-icon {
+  display: flex;
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.55rem;
+  color: var(--color-copid-price);
+  background: rgba(216, 178, 122, 0.1);
+}
+
+.details-photo {
+  width: 100%;
+  height: min(52vw, 320px);
+  max-height: 340px;
+  object-fit: cover;
+  object-position: center 56%;
+  background: #101010;
+  border-bottom-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+}
+
+.details-photo.frame-shrimp,
+.details-photo.product-image-zoom--dynamite-shrimp {
+  object-fit: contain;
+  object-position: 42% 58%;
+  background: #050505;
+  height: min(58vw, 360px);
+}
+
+.details-photo.frame-salad,
+.details-photo.frame-steak {
+  object-fit: contain;
+  object-position: 50% 54%;
+  background: #050505;
+}
+
+.details-photo.frame-plate,
+.details-photo.frame-slider-mix,
+.details-photo.frame-slider {
+  object-fit: cover;
+  object-position: 50% 54%;
+}
+
+.details-placeholder {
+  display: flex;
+  height: 180px;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+  background:
+    radial-gradient(circle at 50% 40%, rgba(216, 178, 122, 0.14), transparent 60%),
+    #101010;
+}
+
+@media (max-width: 430px) {
+  .cover-frame {
+    height: 188px;
+    min-height: 168px;
+    max-height: 200px;
+  }
+
+  .cover-photo {
+    object-position: 48% 58%;
+  }
+}
+
+@media (max-width: 390px) {
+  .cover-frame {
+    height: 176px;
+    min-height: 160px;
+    max-height: 184px;
+  }
+
+  .cover-photo {
+    object-position: 46% 60%;
+  }
+}
+
+@media (max-width: 375px) {
+  .cover-frame {
+    height: 164px;
+    min-height: 152px;
+    max-height: 172px;
+  }
+
+  .cover-photo {
+    object-position: 45% 62%;
+  }
+
+  .product-image,
+  .product-placeholder {
+    width: 112px;
+    height: 112px;
+    max-width: 34vw;
+    max-height: 34vw;
+  }
+}
+
+@media (max-width: 320px) {
+  .product-image,
+  .product-placeholder {
+    width: 96px;
+    height: 96px;
+  }
+
+  .sauce-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 720px) {
+  .menu-shell {
+    box-shadow: 0 0 0 1px rgba(216, 178, 122, 0.08);
+  }
+
+  .cover-frame {
+    height: 280px;
+    max-height: 300px;
+  }
+
+  .cover-photo {
+    object-position: 50% 46%;
+  }
+
+  .logo-96 {
+    width: 100px;
+    height: 100px;
+  }
+}

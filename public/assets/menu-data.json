@@ -1,0 +1,513 @@
+{
+  "brand": {
+    "name": {
+      "ar": "سو سلوشي",
+      "en": "SO SLUSHI"
+    },
+    "identity": "Premium black and warm-gold restaurant identity",
+    "palette": {
+      "background": "#050505",
+      "surface": "#101010",
+      "surfaceAlt": "#171717",
+      "gold": "#D8B27A",
+      "goldSoft": "#E7C995",
+      "text": "#F7F1E8",
+      "muted": "#A79C8D"
+    },
+    "logoReference": "assets/brand/logo-reference-crop.webp"
+  },
+  "currency": {
+    "ar": "ر.س",
+    "en": "SAR"
+  },
+  "sourcePriority": [
+    "Current prices supplied by the user in this chat (authoritative for price)",
+    "Old So Slushi menu PDF (authoritative only for legacy names / known sauce names)",
+    "Visual matching of the new photo set (for image-to-product mapping)"
+  ],
+  "categories": [
+    {
+      "id": "chicken-burgers",
+      "name": {
+        "ar": "برجر الدجاج",
+        "en": "Chicken Burgers"
+      },
+      "items": [
+        {
+          "id": "burger-slushi",
+          "name": {
+            "ar": "برجر سلوشي",
+            "en": "Slushi Burger"
+          },
+          "price": {
+            "sandwich": 23,
+            "meal": 29
+          },
+          "image": "assets/menu-final/burger-slushi.webp",
+          "confidence": "high"
+        },
+        {
+          "id": "classic-crunchy",
+          "name": {
+            "ar": "برجر كلاسيك كرانشي",
+            "en": "Classic Crunchy Burger"
+          },
+          "price": {
+            "sandwich": 19,
+            "meal": 25
+          },
+          "image": "assets/menu-final/classic-crunchy.webp",
+          "confidence": "high"
+        },
+        {
+          "id": "maple-crunchy",
+          "name": {
+            "ar": "برجر ميبل كرانشي",
+            "en": "Maple Crunchy Burger"
+          },
+          "price": {
+            "sandwich": 22,
+            "meal": 28
+          },
+          "image": "assets/menu-final/maple-crunchy.webp",
+          "confidence": "high"
+        },
+        {
+          "id": "grilled-chicken",
+          "name": {
+            "ar": "برجر دجاج مشوي",
+            "en": "Grilled Chicken Burger"
+          },
+          "price": {
+            "sandwich": 17,
+            "meal": 23
+          },
+          "image": "assets/menu-final/grilled-chicken.webp",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": "beef-burgers",
+      "name": {
+        "ar": "برجر اللحم",
+        "en": "Beef Burgers"
+      },
+      "items": [
+        {
+          "id": "classic-beef",
+          "name": {
+            "ar": "برجر لحم كلاسيك",
+            "en": "Classic Beef Burger"
+          },
+          "price": {
+            "sandwich": 19,
+            "meal": 25
+          },
+          "image": "assets/menu-final/classic-beef.webp",
+          "confidence": "high"
+        },
+        {
+          "id": "slushi-mushroom",
+          "name": {
+            "ar": "برجر ماشروم سلوشي",
+            "en": "Slushi Mushroom Burger"
+          },
+          "price": {
+            "sandwich": 23,
+            "meal": 29
+          },
+          "image": "assets/menu-final/slushi-mushroom.webp",
+          "confidence": "high"
+        },
+        {
+          "id": "cherry-beef",
+          "name": {
+            "ar": "برجر لحم بالكرز",
+            "en": "Cherry Beef Burger"
+          },
+          "price": {
+            "sandwich": 23,
+            "meal": 29
+          },
+          "image": "assets/menu-final/cherry-beef.webp",
+          "confidence": "high"
+        },
+        {
+          "id": "slushi-smash",
+          "name": {
+            "ar": "برجر سماش سلوشي",
+            "en": "Slushi Smash Burger"
+          },
+          "price": {
+            "sandwich": 19,
+            "meal": 25
+          },
+          "variantLabel": {
+            "ar": "دبل",
+            "en": "Double"
+          },
+          "image": "assets/menu-final/slushi-smash.webp",
+          "confidence": "high"
+        },
+        {
+          "id": "brisket-sandwich",
+          "name": {
+            "ar": "ساندوتش بريسكت",
+            "en": "Brisket Sandwich"
+          },
+          "price": {
+            "sandwich": 32,
+            "meal": 38
+          },
+          "image": "assets/menu-final/brisket-sandwich.webp",
+          "confidence": "high"
+        },
+        {
+          "id": "signature-beef",
+          "name": {
+            "ar": "برجر لحم سجنتشر",
+            "en": "Signature Beef Burger"
+          },
+          "price": {
+            "sandwich": 23,
+            "meal": 29
+          },
+          "image": "assets/menu-final/signature-beef.webp",
+          "confidence": "medium",
+          "note": "Best visual match from the supplied new photos; old menu had a legacy signature item."
+        },
+        {
+          "id": "arugula-pomegranate-burger",
+          "name": {
+            "ar": "برجر جرجير رمان",
+            "en": "Arugula & Pomegranate Burger"
+          },
+          "price": {
+            "sandwich": 23,
+            "meal": 29
+          },
+          "image": "assets/menu-final/arugula-pomegranate-burger.webp",
+          "confidence": "high"
+        },
+        {
+          "id": "ribs-beef-burger",
+          "name": {
+            "ar": "برجر لحم أضلاع",
+            "en": "Ribs Beef Burger"
+          },
+          "price": {
+            "sandwich": 46,
+            "meal": 52
+          },
+          "image": "assets/menu-final/ribs-beef-burger.webp",
+          "confidence": "high"
+        },
+        {
+          "id": "keto-beef",
+          "name": {
+            "ar": "لحم كيتو",
+            "en": "Keto Beef Burger"
+          },
+          "price": {
+            "sandwich": 20,
+            "meal": 26
+          },
+          "image": null,
+          "confidence": "high-for-price-low-for-photo",
+          "note": "No confident new-photo match. Do not assign a wrong burger photo."
+        }
+      ]
+    },
+    {
+      "id": "ribs-steaks",
+      "name": {
+        "ar": "الأضلاع والستيك",
+        "en": "Ribs & Steaks"
+      },
+      "items": [
+        {
+          "id": "ribs",
+          "name": {
+            "ar": "أضلاع",
+            "en": "Ribs"
+          },
+          "price": {
+            "single": 86
+          },
+          "image": "assets/menu-final/ribs.webp",
+          "confidence": "high"
+        },
+        {
+          "id": "tenderloin-steak",
+          "name": {
+            "ar": "ستيك تندرلوين",
+            "en": "Tenderloin Steak"
+          },
+          "price": {
+            "single": 68
+          },
+          "image": "assets/menu-final/tenderloin-steak.webp",
+          "confidence": "medium",
+          "note": "Uses one of two edited variants from the same photographed steak source."
+        },
+        {
+          "id": "ribeye-steak",
+          "name": {
+            "ar": "ستيك ريب آي",
+            "en": "Ribeye Steak"
+          },
+          "price": {
+            "single": 119
+          },
+          "image": "assets/menu-final/ribeye-steak.webp",
+          "confidence": "medium",
+          "note": "Uses one of two edited variants from the same photographed steak source."
+        }
+      ]
+    },
+    {
+      "id": "sides-salads",
+      "name": {
+        "ar": "الفرايز والسلطات",
+        "en": "Fries & Salads"
+      },
+      "items": [
+        {
+          "id": "slushi-fries",
+          "name": {
+            "ar": "سلوشي فرايز",
+            "en": "Slushi Fries"
+          },
+          "price": {
+            "single": 19
+          },
+          "image": "assets/menu-final/slushi-fries.webp",
+          "confidence": "medium"
+        },
+        {
+          "id": "jalapeno-fries",
+          "name": {
+            "ar": "هلابينو فرايز",
+            "en": "Jalapeño Fries"
+          },
+          "price": {
+            "single": 14
+          },
+          "image": "assets/menu-final/jalapeno-fries.webp",
+          "confidence": "high"
+        },
+        {
+          "id": "brisket-fries",
+          "name": {
+            "ar": "بريسكت فرايز",
+            "en": "Brisket Fries"
+          },
+          "price": {
+            "single": 23
+          },
+          "image": "assets/menu-final/brisket-fries.webp",
+          "confidence": "high"
+        },
+        {
+          "id": "arugula-pomegranate-salad",
+          "name": {
+            "ar": "سلطة جرجير رمان",
+            "en": "Arugula & Pomegranate Salad"
+          },
+          "price": {
+            "single": 16
+          },
+          "image": "assets/menu-final/arugula-pomegranate-salad.webp",
+          "confidence": "high"
+        },
+        {
+          "id": "slushi-feta-salad",
+          "name": {
+            "ar": "سلطة فيتا سلوشي",
+            "en": "Slushi Feta Salad"
+          },
+          "price": {
+            "single": 18
+          },
+          "image": "assets/menu-final/slushi-feta-salad.webp",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": "sliders",
+      "name": {
+        "ar": "السلايدر",
+        "en": "Sliders"
+      },
+      "items": [
+        {
+          "id": "slider-beef",
+          "name": {
+            "ar": "برجر سلايدر لحم",
+            "en": "Beef Slider"
+          },
+          "price": {
+            "sandwich": 12,
+            "meal": 16
+          },
+          "image": "assets/menu-final/slider-beef.webp",
+          "confidence": "high",
+          "note": "Crop derived from the supplied mixed slider photo."
+        },
+        {
+          "id": "slider-chicken",
+          "name": {
+            "ar": "برجر سلايدر دجاج",
+            "en": "Chicken Slider"
+          },
+          "price": {
+            "sandwich": 12,
+            "meal": 16
+          },
+          "image": "assets/menu-final/slider-chicken.webp",
+          "confidence": "high",
+          "note": "Crop derived from the supplied mixed slider photo."
+        },
+        {
+          "id": "slider-mix",
+          "name": {
+            "ar": "برجر سلايدر مكس",
+            "en": "Mixed Sliders"
+          },
+          "price": {
+            "sandwich": 24,
+            "meal": 28
+          },
+          "image": "assets/menu-final/slider-mix.webp",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": "sauces",
+      "name": {
+        "ar": "الصوصات",
+        "en": "Sauces"
+      },
+      "displayMode": "compact-options-no-photo-binding",
+      "priceEach": 3,
+      "items": [
+        {
+          "id": "sauce-slushi",
+          "name": {
+            "ar": "صوص سلوشي",
+            "en": "Slushi Sauce"
+          }
+        },
+        {
+          "id": "sauce-classic",
+          "name": {
+            "ar": "صوص كلاسيك",
+            "en": "Classic Sauce"
+          }
+        },
+        {
+          "id": "sauce-dynamite",
+          "name": {
+            "ar": "صوص داينمت",
+            "en": "Dynamite Sauce"
+          }
+        },
+        {
+          "id": "sauce-honey-mustard",
+          "name": {
+            "ar": "صوص الخردل بالعسل",
+            "en": "Honey Mustard Sauce"
+          }
+        },
+        {
+          "id": "sauce-truffle",
+          "name": {
+            "ar": "صوص الفقع",
+            "en": "Truffle Sauce"
+          }
+        },
+        {
+          "id": "sauce-maple",
+          "name": {
+            "ar": "صوص الميبل",
+            "en": "Maple Sauce"
+          }
+        }
+      ],
+      "note": "Names come from the old menu; current user instruction overrides all sauce prices to 3 SAR. Eight sauce photos are preserved as generic references because exact photo-to-name mapping is not explicit."
+    },
+    {
+      "id": "drinks",
+      "name": {
+        "ar": "المشروبات",
+        "en": "Drinks"
+      },
+      "items": [
+        {
+          "id": "coca-cola",
+          "name": {
+            "ar": "كوكاكولا",
+            "en": "Coca-Cola"
+          },
+          "price": {
+            "single": 3
+          },
+          "image": null
+        },
+        {
+          "id": "sprite",
+          "name": {
+            "ar": "سبرايت",
+            "en": "Sprite"
+          },
+          "price": {
+            "single": 3
+          },
+          "image": null
+        },
+        {
+          "id": "diet-cola",
+          "name": {
+            "ar": "كولا دايت",
+            "en": "Diet Cola"
+          },
+          "price": {
+            "single": 3
+          },
+          "image": null
+        },
+        {
+          "id": "fanta-orange",
+          "name": {
+            "ar": "فانتا برتقال",
+            "en": "Fanta Orange"
+          },
+          "price": {
+            "single": 3
+          },
+          "image": null
+        },
+        {
+          "id": "mojito",
+          "name": {
+            "ar": "موهيتو",
+            "en": "Mojito"
+          },
+          "price": {
+            "single": 10
+          },
+          "image": null
+        }
+      ]
+    }
+  ],
+  "rules": {
+    "currentPricesOverrideLegacy": true,
+    "doNotInventMissingPhotos": true,
+    "doNotInventDescriptionsCaloriesAllergens": true,
+    "noSaucePhotoBindingWithoutManualConfirmation": true
+  }
+}

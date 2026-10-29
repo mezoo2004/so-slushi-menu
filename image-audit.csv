@@ -1,0 +1,47 @@
+﻿source_file,status,mapped_product_ar,final_asset,confidence,reason
+DSC05568.png,USE,برجر سلوشي,burger-slushi.webp,high,Primary selected chicken Slushi photo
+DSC05583.png,DROP_DUPLICATE,برجر سلوشي / كرانشي (alternate),,medium,Alternate fried-chicken burger shot; removed to avoid repetition
+DSC05589.png,USE,برجر ميبل كرانشي,maple-crunchy.webp,high,Toast-bread maple-style item matches legacy Maple Crunchy
+DSC05594.png,USE,برجر كلاسيك كرانشي,classic-crunchy.webp,high,Selected classic crunchy chicken image
+DSC05598.png,DROP_DUPLICATE,كلاسيك كرانشي (alternate),,medium,Alternate fried-chicken burger shot
+DSC05599.png,DROP_DUPLICATE,برجر سلوشي / كرانشي (alternate),,medium,Alternate fried-chicken burger shot
+DSC05605.png,DROP_DUPLICATE,برجر لحم كلاسيك (alternate),,medium,Classic-style beef alternate; stronger classic image selected from DSC05625
+DSC05611.png,USE,برجر لحم سجنتشر,signature-beef.webp,medium,Best visual match among supplied photos
+DSC05615.png,USE,برجر ماشروم سلوشي,slushi-mushroom.webp,high,Creamy mushroom topping is visually explicit
+DSC05619.png,USE,برجر جرجير رمان,arugula-pomegranate-burger.webp,high,Arugula and pomegranate visible
+DSC05625.png,USE,برجر لحم كلاسيك,classic-beef.webp,high,Classic onion/tomato/lettuce/cheese profile
+DSC05631.png,USE,برجر لحم بالكرز,cherry-beef.webp,high,Cherry/red cherry sauce visually explicit
+DSC05633.png,USE,برجر سماش سلوشي,slushi-smash.webp,high,Smash-style crisp patty edges
+DSC05640.png,USE_AND_CROP,سلايدر مكس + مصدر سلايدر لحم/دجاج,slider-mix.webp + crops,high,Mixed slider photo used whole and cropped into individual beef/chicken slider assets
+DSC05691.png,USE,برجر دجاج مشوي,grilled-chicken.webp,high,Grilled chicken is visually explicit
+DSC05726.png,EXCLUDE_NOT_CURRENT,تشكن فرايز / طبق دجاج قديم,,high,Matches old-menu side family but no current price supplied
+DSC05731.png,USE,هلابينو فرايز,jalapeno-fries.webp,high,Jalapeno slices visible
+DSC05749.png,USE,سلوشي فرايز,slushi-fries.webp,medium,Selected as Slushi fries; visually close to jalapeno loaded fries
+DSC05787-steak-fries.png,USE_SHARED_SOURCE,ستيك ريب آي,ribeye-steak.webp,medium,Edited variant from same steak source as Tenderloin
+DSC05787-steak-mash.png,USE_SHARED_SOURCE,ستيك تندرلوين,tenderloin-steak.webp,medium,Edited variant from same steak source as Ribeye
+DSC05807.png,USE,سلطة فيتا سلوشي,slushi-feta-salad.webp,high,Feta cubes visible
+DSC05813.png,USE,سلطة جرجير رمان,arugula-pomegranate-salad.webp,high,Pomegranate seeds and greens visible
+DSC05824.png,USE,ساندوتش بريسكت,brisket-sandwich.webp,high,Pulled brisket in toast sandwich
+DSC05827.png,DROP_DUPLICATE,بريسكت فرايز (alternate),,high,Alternate of selected loaded brisket fries
+DSC05838.png,USE,بريسكت فرايز,brisket-fries.webp,high,Selected stronger loaded brisket fries presentation
+DSC05860-rib-corn.png,USE,أضلاع,ribs.webp,high,Primary ribs plating; sauce/corn included
+DSC05874.png,DROP_DUPLICATE,أضلاع (alternate),,high,Same ribs product; primary DSC05860 retained
+DSC05884.png,USE,برجر لحم أضلاع,ribs-beef-burger.webp,high,Pulled rib meat burger
+DSC05902.png,EXCLUDE_NOT_CURRENT,قطع دجاج / طبق دجاج قديم,,medium,Old-menu-style chicken side; no current price supplied
+DSC05924.png,REFERENCE_ONLY,صوص - غير مربوط باسم محدد,sauce-reference-01.webp,low,Exact sauce name not explicit in source
+DSC05927.png,REFERENCE_ONLY,صوص - غير مربوط باسم محدد,sauce-reference-02.webp,low,Exact sauce name not explicit in source
+DSC05933.png,REFERENCE_ONLY,صوص - غير مربوط باسم محدد,sauce-reference-03.webp,low,Exact sauce name not explicit in source
+DSC05935.png,REFERENCE_ONLY,صوص - غير مربوط باسم محدد,sauce-reference-04.webp,low,Exact sauce name not explicit in source
+DSC05942.png,REFERENCE_ONLY,صوص - غير مربوط باسم محدد,sauce-reference-05.webp,low,Exact sauce name not explicit in source
+DSC05948.png,REFERENCE_ONLY,صوص - غير مربوط باسم محدد,sauce-reference-06.webp,low,Exact sauce name not explicit in source
+DSC05956.png,REFERENCE_ONLY,صوص - غير مربوط باسم محدد,sauce-reference-07.webp,low,Exact sauce name not explicit in source
+DSC05961.png,REFERENCE_ONLY,صوص - غير مربوط باسم محدد,sauce-reference-08.webp,low,Exact sauce name not explicit in source
+DSC05964.png,EXCLUDE_NOT_CURRENT,تشكن فرايز,,high,Chicken fries; no current price supplied
+DSC05969.png,EXCLUDE_NOT_CURRENT,بطاطس فرايز عادية,,high,Plain fries not included in current supplied price list
+DSC05975.png,EXCLUDE_UNMATCHED,راب دجاج,,medium,No matching current priced item in supplied list
+DSC05977.png,DROP_DUPLICATE,برجر دجاج كرانشي - إعادة تصوير,,medium,Later alternate/reshoot; removed to avoid repeated chicken cards
+DSC05980.png,DROP_DUPLICATE,برجر دجاج كرانشي - إعادة تصوير,,medium,Later alternate/reshoot
+DSC05983.png,DROP_DUPLICATE,برجر دجاج كرانشي - إعادة تصوير,,medium,Later alternate/reshoot
+DSC05984.png,DROP_DUPLICATE,برجر دجاج كرانشي - إعادة تصوير,,medium,Later alternate/reshoot
+DSC05987.png,DROP_DUPLICATE,برجر دجاج كرانشي - إعادة تصوير,,medium,Later alternate/reshoot
+DSC05990.png,DROP_DUPLICATE,برجر دجاج كرانشي - إعادة تصوير,,medium,Later alternate/reshoot

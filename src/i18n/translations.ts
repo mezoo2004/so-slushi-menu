@@ -21,7 +21,7 @@ export const ui = {
     priceSingle: 'ساندوتش',
     priceMeal: 'وجبة',
     noPhoto: 'بدون صورة',
-    pricePending: 'السعر قريباً',
+    pricePending: 'السعر قريبًا',
   },
   en: {
     languageLabel: 'العربية',

@@ -60,6 +60,12 @@ button {
   cursor: pointer;
 }
 
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--color-copid-price);
+  outline-offset: 2px;
+}
+
 .menu-shell {
   width: 100%;
   max-width: 720px;
@@ -88,6 +94,10 @@ button {
   z-index: 40;
   background: var(--color-copid-bg);
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+}
+
+.category-pill {
+  min-height: 44px;
 }
 
 .category-pill.active .category-icon-circle {
@@ -167,8 +177,8 @@ button {
 }
 
 .calorie-dot {
-  width: 5px;
-  height: 5px;
+  width: 4px;
+  height: 4px;
   flex-shrink: 0;
   border-radius: 50%;
   background: #5b8fd4;
@@ -203,6 +213,7 @@ html[lang="en"] .product-desc {
 .product-image {
   width: 132px;
   height: 132px;
+  aspect-ratio: 1 / 1;
   max-width: 38vw;
   max-height: 38vw;
   border-radius: 1.05rem;
@@ -244,7 +255,8 @@ html[lang="en"] .product-desc {
 .product-image-zoom--brisket-sandwich,
 .product-image-zoom--signature-beef,
 .product-image-zoom--arugula-pomegranate-burger,
-.product-image-zoom--ribs-beef-burger {
+.product-image-zoom--ribs-beef-burger,
+.product-image-zoom--honey-mustard-chicken {
   object-fit: cover;
   object-position: 50% 56%;
   transform: scale(1.06);
@@ -268,8 +280,8 @@ html[lang="en"] .product-desc {
 .frame-salad .product-image-zoom,
 .product-image-zoom--arugula-pomegranate-salad,
 .product-image-zoom--slushi-feta-salad {
-  object-fit: contain;
-  object-position: 48% 58%;
+  object-fit: cover;
+  object-position: 48% 62%;
   transform: none;
   background: #080808;
 }
@@ -302,8 +314,8 @@ html[lang="en"] .product-desc {
 
 .frame-shrimp .product-image-zoom,
 .product-image-zoom--dynamite-shrimp {
-  object-fit: cover;
-  object-position: 40% 62%;
+  object-fit: contain;
+  object-position: 42% 58%;
   transform: none;
   background: #050505;
 }
@@ -380,41 +392,32 @@ html[lang="en"] .product-desc {
 .logo-badge-wrap {
   display: flex;
   justify-content: center;
-  margin-top: -44px;
+  margin-top: -56px;
   position: relative;
   z-index: 3;
 }
 
 .logo-96 {
   position: relative;
-  width: 92px;
-  height: 92px;
+  display: flex;
+  width: 132px;
+  height: 132px;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
   border-radius: 50%;
   overflow: hidden;
-  background: #050505;
+  background: #000000;
   border: 1.5px solid rgba(216, 178, 122, 0.88);
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.45);
 }
 
-.logo-96::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 28%;
-  background: linear-gradient(to top, #050505 8%, transparent 100%);
-  pointer-events: none;
-}
-
-.logo-96-crop {
-  width: 112%;
-  height: 112%;
+.logo-96-mark {
+  width: 100%;
+  height: 100%;
   max-width: none;
-  object-fit: cover;
-  object-position: 50% 22%;
-  margin-inline-start: -6%;
-  margin-top: 6%;
+  object-fit: contain;
+  object-position: center;
 }
 
 .brand-section {
@@ -496,8 +499,8 @@ html[lang="en"] .product-desc {
 }
 
 .sauce-thumb {
-  width: 36px;
-  height: 36px;
+  width: 48px;
+  height: 48px;
   flex-shrink: 0;
   overflow: hidden;
   border-radius: 0.55rem;
@@ -643,7 +646,32 @@ html[lang="en"] .product-desc {
   }
 
   .logo-96 {
-    width: 100px;
-    height: 100px;
+    width: 148px;
+    height: 148px;
+    padding: 10px;
+  }
+
+  .logo-badge-wrap {
+    margin-top: -62px;
+  }
+}
+
+@media (max-width: 430px) {
+  .logo-96 {
+    width: 124px;
+    height: 124px;
+    padding: 8px;
+  }
+
+  .logo-badge-wrap {
+    margin-top: -52px;
+  }
+}
+
+@media (max-width: 375px) {
+  .logo-96 {
+    width: 118px;
+    height: 118px;
+    padding: 8px;
   }
 }

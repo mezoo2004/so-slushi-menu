@@ -1,9 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="SO SLUSHI">
-  <rect width="120" height="120" fill="#050505"/>
-  <g fill="none" stroke="#D8B27A" stroke-width="5.2" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M52 28c-14 0-24 10-24 24 0 13 10 24 24 24 8 0 15-4 19-10"/>
-    <path d="M52 28c10 8 16 20 16 34"/>
-    <path d="M68 44c4-6 11-10 19-10 14 0 24 11 24 24 0 14-10 24-24 24-8 0-15-4-19-10"/>
-    <path d="M68 82c-10-8-16-20-16-34"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="SO SLUSHI">
+  <g fill="none" stroke="#E4C291" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M46.5 21.5c-15.2 0-25 11.2-25 25 0 14.2 10.2 25.4 24.6 25.4 7 0 13.2-3.2 17-8.4"/>
+    <path d="M46.5 21.5c10.8 8.4 17.2 21.4 16.8 35.4"/>
+    <path d="M53.5 78.5c15.2 0 25-11.2 25-25 0-14.2-10.2-25.4-24.6-25.4-7 0-13.2 3.2-17 8.4"/>
+    <path d="M53.5 78.5c-10.8-8.4-17.2-21.4-16.8-35.4"/>
   </g>
 </svg>

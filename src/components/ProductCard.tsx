@@ -30,7 +30,8 @@ export function ProductCard({ product }: Props) {
   return (
     <Link
       to={`/item/${product.id}`}
-      className="flex min-w-0 items-stretch gap-3.5 px-3 py-3.5 text-inherit no-underline transition active:bg-white/5 sm:px-4"
+      className="flex min-h-11 min-w-0 items-stretch gap-3.5 px-3 py-3.5 text-inherit no-underline transition active:bg-white/5 sm:px-4"
+      aria-label={tr(product.name)}
       dir="ltr"
     >
       {showPhoto && product.image ? (

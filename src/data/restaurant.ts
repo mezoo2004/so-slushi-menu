@@ -10,7 +10,7 @@ export const restaurant: RestaurantInfo = {
     ar: menuData.brand.name.ar,
     en: menuData.brand.name.en,
   },
-  logo: '/assets/brand/logo-96-source.png',
+  logo: '/assets/brand/so-slushi-logo.png',
   coverImage: '/assets/brand/hero-ribs.jpg',
   currency: {
     code: 'SAR',

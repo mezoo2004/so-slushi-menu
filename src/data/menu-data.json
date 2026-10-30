@@ -77,6 +77,19 @@
           "image": "assets/menu-final/grilled-chicken.webp",
           "frame": "burger",
           "confidence": "high"
+        },
+        {
+          "id": "honey-mustard-chicken",
+          "name": { "ar": "برجر هاني ماسترد", "en": "Honey Mustard Chicken Burger" },
+          "description": {
+            "ar": "صدر دجاج مقلي مع الجبن والخس وصوص الهاني ماسترد.",
+            "en": "Fried chicken breast with cheese, lettuce, and honey mustard sauce."
+          },
+          "calories": 700,
+          "pricePending": true,
+          "image": "assets/menu-final/honey-mustard-chicken.jpg",
+          "frame": "burger",
+          "confidence": "high"
         }
       ]
     },

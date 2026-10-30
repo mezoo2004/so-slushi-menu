@@ -7,7 +7,7 @@ type Props = {
 export function Header({ onMenuClick }: Props) {
   return (
     <header className="relative z-[2] w-full min-w-0">
-      <div className="cover-frame" role="img" aria-label={restaurant.name.en}>
+      <div className="cover-frame">
         <img
           src={restaurant.coverImage}
           alt=""
@@ -20,7 +20,7 @@ export function Header({ onMenuClick }: Props) {
           type="button"
           onClick={onMenuClick}
           aria-label="Menu"
-          className="menu-profile-btn absolute left-3 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-black/70 text-copid-price shadow-md backdrop-blur-sm"
+          className="menu-profile-btn absolute left-3 z-10 flex h-11 w-11 items-center justify-center rounded-full bg-black/70 text-copid-price shadow-md backdrop-blur-sm"
         >
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
             <circle cx="12" cy="8" r="3.5" stroke="currentColor" strokeWidth="1.8" />
@@ -35,12 +35,8 @@ export function Header({ onMenuClick }: Props) {
       </div>
 
       <div className="logo-badge-wrap">
-        <div className="logo-96" aria-hidden="false">
-          <img
-            src={restaurant.logo}
-            alt={restaurant.name.en}
-            className="logo-96-crop"
-          />
+        <div className="logo-96">
+          <img src={restaurant.logo} alt={restaurant.name.en} className="logo-96-mark" />
         </div>
       </div>
     </header>

@@ -14,7 +14,7 @@ export function RestaurantInfo({ onFeedbackClick }: Props) {
         <button
           type="button"
           onClick={toggleLocale}
-          className="inline-flex items-center gap-1.5 rounded-full px-1 py-1 text-sm font-semibold text-copid-accent"
+          className="inline-flex min-h-11 items-center gap-1.5 rounded-full px-2 py-2 text-sm font-semibold text-copid-accent"
           aria-label={ui('languageLabel')}
         >
           <span className="text-[10px] opacity-80">▼</span>

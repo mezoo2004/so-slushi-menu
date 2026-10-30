@@ -58,6 +58,8 @@ export function ProductDetails() {
             src={product.image}
             alt={tr(product.name)}
             className={`details-photo frame-${frame} product-image-zoom--${product.id}`}
+            width={720}
+            height={320}
             onUnavailable={() => setPhotoFailed(true)}
           />
         ) : (

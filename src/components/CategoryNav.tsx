@@ -79,7 +79,7 @@ export function CategoryNav({
                 itemRefs.current[category.id] = node
               }}
               onClick={() => onSelect(category.id)}
-              className={`category-pill flex w-[72px] shrink-0 flex-col items-center gap-1.5 ${
+              className={`category-pill flex w-[72px] min-h-11 shrink-0 flex-col items-center gap-1.5 ${
                 isActive ? 'active' : ''
               }`}
               aria-current={isActive ? 'true' : undefined}

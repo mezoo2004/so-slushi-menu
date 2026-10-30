@@ -10,6 +10,7 @@ type SourceItem = {
   pricePending?: boolean
   image?: string | null
   variantLabel?: { ar: string; en: string }
+  note?: { ar: string; en: string }
   frame?: ImageFrame
 }
 
@@ -28,7 +29,7 @@ const CATEGORY_THUMBS: Record<string, string | null> = {
   'beef-burgers': '/assets/menu-final/classic-beef.webp',
   'ribs-steaks': '/assets/menu-final/ribs.webp',
   appetizers: '/assets/menu-final/dynamite-shrimp.jpg',
-  'sides-salads': '/assets/menu-final/jalapeno-fries.webp',
+  'sides-salads': '/assets/menu-final/slushi-fries.webp',
   sliders: '/assets/menu-final/slider-beef.jpg',
   wraps: '/assets/menu-final/wrap.jpg',
   sauces: '/assets/menu-final/sauce-slushi.jpg',
@@ -71,6 +72,7 @@ export const products: Product[] = sourceCategories.flatMap((category) =>
       pricePending: Boolean(item.pricePending),
       available: true,
       badge: item.variantLabel,
+      note: item.note,
       frame: item.frame,
     }
   }),

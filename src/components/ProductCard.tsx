@@ -67,6 +67,12 @@ export function ProductCard({ product }: Props) {
           </p>
         ) : null}
 
+        {product.note ? (
+          <p className="product-note mt-1 text-[12px] font-semibold leading-snug text-copid-price">
+            {tr(product.note)}
+          </p>
+        ) : null}
+
         {product.price != null ? (
           <div className="mt-auto flex justify-start pt-2">
             <PriceBadge price={product.price} mealPrice={product.mealPrice} />

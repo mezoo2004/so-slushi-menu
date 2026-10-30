@@ -119,6 +119,10 @@ export function ProductDetails() {
           </p>
         ) : null}
 
+        {product.note ? (
+          <p className="product-note mt-3 text-sm font-semibold text-copid-price">{tr(product.note)}</p>
+        ) : null}
+
         {product.price != null ? (
           <div className="mt-6 flex justify-start">
             <PriceBadge price={product.price} mealPrice={product.mealPrice} />

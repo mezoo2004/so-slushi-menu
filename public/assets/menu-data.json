@@ -14,500 +14,564 @@
       "text": "#F7F1E8",
       "muted": "#A79C8D"
     },
-    "logoReference": "assets/brand/logo-reference-crop.webp"
+    "logoReference": "assets/brand/logo-reference-crop.webp",
+    "heroImage": "assets/brand/hero-ribs.jpg"
   },
   "currency": {
     "ar": "ر.س",
     "en": "SAR"
   },
-  "sourcePriority": [
-    "Current prices supplied by the user in this chat (authoritative for price)",
-    "Old So Slushi menu PDF (authoritative only for legacy names / known sauce names)",
-    "Visual matching of the new photo set (for image-to-product mapping)"
-  ],
   "categories": [
     {
       "id": "chicken-burgers",
-      "name": {
-        "ar": "برجر الدجاج",
-        "en": "Chicken Burgers"
-      },
+      "name": { "ar": "برجر الدجاج", "en": "Chicken Burgers" },
       "items": [
         {
           "id": "burger-slushi",
-          "name": {
-            "ar": "برجر سلوشي",
-            "en": "Slushi Burger"
+          "name": { "ar": "برجر سلوشي", "en": "Slushi Burger" },
+          "description": {
+            "ar": "صدر دجاج مقلي مع صوص سلوشي والخس والجبن",
+            "en": "Fried chicken breast with Slushi sauce, lettuce, and cheese."
           },
-          "price": {
-            "sandwich": 23,
-            "meal": 29
-          },
+          "calories": 720,
+          "price": { "sandwich": 23, "meal": 29 },
           "image": "assets/menu-final/burger-slushi.webp",
+          "frame": "burger",
           "confidence": "high"
         },
         {
           "id": "classic-crunchy",
-          "name": {
-            "ar": "برجر كلاسيك كرانشي",
-            "en": "Classic Crunchy Burger"
+          "name": { "ar": "برجر كلاسيك كرانشي", "en": "Classic Crunchy Burger" },
+          "description": {
+            "ar": "صدر دجاج مقلي مع صوص الكلاسيك والخس والمخلل مع سلطة كول سلو.",
+            "en": "Fried chicken breast with classic sauce, lettuce, and pickles, served with coleslaw."
           },
-          "price": {
-            "sandwich": 19,
-            "meal": 25
-          },
+          "calories": 680,
+          "price": { "sandwich": 19, "meal": 25 },
           "image": "assets/menu-final/classic-crunchy.webp",
+          "frame": "burger",
           "confidence": "high"
         },
         {
           "id": "maple-crunchy",
-          "name": {
-            "ar": "برجر ميبل كرانشي",
-            "en": "Maple Crunchy Burger"
+          "name": { "ar": "برجر ميبل كرانشي", "en": "Maple Crunchy Burger" },
+          "description": {
+            "ar": "صدر دجاج مع الجبن وصوص الميبل والخس والمخلل مع سلطة كول سلو.",
+            "en": "Chicken breast with cheese, maple sauce, lettuce, and pickles, served with coleslaw."
           },
-          "price": {
-            "sandwich": 22,
-            "meal": 28
-          },
+          "calories": 740,
+          "price": { "sandwich": 22, "meal": 28 },
           "image": "assets/menu-final/maple-crunchy.webp",
+          "frame": "burger",
           "confidence": "high"
         },
         {
           "id": "grilled-chicken",
-          "name": {
-            "ar": "برجر دجاج مشوي",
-            "en": "Grilled Chicken Burger"
+          "name": { "ar": "برجر دجاج مشوي", "en": "Grilled Chicken Burger" },
+          "description": {
+            "ar": "صدر دجاج مشوي على اللهب مع صوص الكلاسيك والخس والجبن والمخلل.",
+            "en": "Flame-grilled chicken breast with classic sauce, lettuce, cheese, and pickles."
           },
-          "price": {
-            "sandwich": 17,
-            "meal": 23
-          },
+          "calories": 520,
+          "price": { "sandwich": 17, "meal": 23 },
           "image": "assets/menu-final/grilled-chicken.webp",
+          "frame": "burger",
+          "confidence": "high"
+        },
+        {
+          "id": "honey-mustard-chicken",
+          "name": { "ar": "برجر هاني ماسترد", "en": "Honey Mustard Chicken Burger" },
+          "description": {
+            "ar": "صدر الدجاج مقلي مع الخس والجبن وصوص الهاني ماسترد الخاص",
+            "en": "Fried chicken breast with lettuce, cheese, and our special honey mustard sauce."
+          },
+          "calories": 700,
+          "pricePending": true,
+          "image": "assets/menu-final/honey-mustard-chicken.jpg",
+          "frame": "burger",
           "confidence": "high"
         }
       ]
     },
     {
       "id": "beef-burgers",
-      "name": {
-        "ar": "برجر اللحم",
-        "en": "Beef Burgers"
-      },
+      "name": { "ar": "برجر اللحم", "en": "Beef Burgers" },
       "items": [
         {
           "id": "classic-beef",
-          "name": {
-            "ar": "برجر لحم كلاسيك",
-            "en": "Classic Beef Burger"
+          "name": { "ar": "برجر لحم كلاسيك", "en": "Classic Beef Burger" },
+          "description": {
+            "ar": "100 غرام من لحم بلاك انجوس الاسترالي مع صوص الكلاسيك والخس والجبن والبصل والطماطم والمخلل",
+            "en": "100g Australian Black Angus beef with classic sauce, lettuce, cheese, onion, tomato, and pickles."
           },
-          "price": {
-            "sandwich": 19,
-            "meal": 25
-          },
+          "calories": 640,
+          "price": { "sandwich": 19, "meal": 25 },
           "image": "assets/menu-final/classic-beef.webp",
+          "frame": "burger",
           "confidence": "high"
         },
         {
           "id": "slushi-mushroom",
-          "name": {
-            "ar": "برجر ماشروم سلوشي",
-            "en": "Slushi Mushroom Burger"
+          "name": { "ar": "برجر ماشروم سلوشي", "en": "Slushi Mushroom Burger" },
+          "description": {
+            "ar": "100 غرام من لحم بلاك انجوس الاسترالي مع صوص الماشروم الخاص ونكهة الترفل والخس والجبن",
+            "en": "100g Australian Black Angus beef with our special mushroom sauce, truffle flavor, lettuce, and cheese."
           },
-          "price": {
-            "sandwich": 23,
-            "meal": 29
-          },
+          "calories": 700,
+          "price": { "sandwich": 23, "meal": 29 },
           "image": "assets/menu-final/slushi-mushroom.webp",
+          "frame": "burger",
           "confidence": "high"
         },
         {
           "id": "cherry-beef",
-          "name": {
-            "ar": "برجر لحم بالكرز",
-            "en": "Cherry Beef Burger"
+          "name": { "ar": "برجر لحم بالكرز", "en": "Cherry Beef Burger" },
+          "description": {
+            "ar": "100 غرام من لحم بلاك انجوس الاسترالي بصوص الكرز الخاص مع الجبن والخس",
+            "en": "100g Australian Black Angus beef with our special cherry sauce, cheese, and lettuce."
           },
-          "price": {
-            "sandwich": 23,
-            "meal": 29
-          },
+          "calories": 680,
+          "price": { "sandwich": 23, "meal": 29 },
           "image": "assets/menu-final/cherry-beef.webp",
+          "frame": "burger",
           "confidence": "high"
         },
         {
           "id": "slushi-smash",
-          "name": {
-            "ar": "برجر سماش سلوشي",
-            "en": "Slushi Smash Burger"
+          "name": { "ar": "برجر سماش سلوشي", "en": "Slushi Smash Burger" },
+          "description": {
+            "ar": "100 غرام من لحم بلاك انجوس الاسترالي بطبقة مقرمشة من اللحم والصوص الخاص والجبن بنكهة مشوية واضحة",
+            "en": "100g Australian Black Angus beef with a crispy seared edge, special sauce, cheese, and a distinct grilled flavor."
           },
-          "price": {
-            "sandwich": 19,
-            "meal": 25
-          },
-          "variantLabel": {
-            "ar": "دبل",
-            "en": "Double"
-          },
+          "calories": 780,
+          "price": { "sandwich": 19, "meal": 25 },
+          "variantLabel": { "ar": "دبل", "en": "Double" },
           "image": "assets/menu-final/slushi-smash.webp",
+          "frame": "burger",
           "confidence": "high"
         },
         {
           "id": "brisket-sandwich",
-          "name": {
-            "ar": "ساندوتش بريسكت",
-            "en": "Brisket Sandwich"
+          "name": { "ar": "بريسكت ساندوتيش", "en": "Brisket Sandwich" },
+          "description": {
+            "ar": "لحم بريسكت المطبوخ بالبطىء مع صوص الباربيكو الخاص",
+            "en": "Slow-cooked brisket with our special barbecue sauce."
           },
-          "price": {
-            "sandwich": 32,
-            "meal": 38
-          },
+          "calories": 820,
+          "price": { "sandwich": 32, "meal": 38 },
           "image": "assets/menu-final/brisket-sandwich.webp",
+          "frame": "burger",
           "confidence": "high"
         },
         {
           "id": "signature-beef",
-          "name": {
-            "ar": "برجر لحم سجنتشر",
-            "en": "Signature Beef Burger"
+          "name": { "ar": "برجر لحم سجنتشر", "en": "Signature Beef Burger" },
+          "description": {
+            "ar": "برجر لحم غني بالنكهة، مع خلطة سلوشي الخاصة وصوصها المميز بالجبن الذائب والبصل المكرمل والخس الطازج",
+            "en": "A rich-flavored beef burger with Slushi’s special blend and signature sauce, topped with melted cheese, caramelized onion, and fresh lettuce."
           },
-          "price": {
-            "sandwich": 23,
-            "meal": 29
-          },
+          "calories": 720,
+          "price": { "sandwich": 23, "meal": 29 },
           "image": "assets/menu-final/signature-beef.webp",
-          "confidence": "medium",
-          "note": "Best visual match from the supplied new photos; old menu had a legacy signature item."
+          "frame": "burger",
+          "confidence": "medium"
         },
         {
           "id": "arugula-pomegranate-burger",
-          "name": {
-            "ar": "برجر جرجير رمان",
-            "en": "Arugula & Pomegranate Burger"
+          "name": { "ar": "برجر جرجير والرمان", "en": "Arugula & Pomegranate Beef Burger" },
+          "description": {
+            "ar": "برجر لحم مع جرجير وحب الرمان والجبن وصوص سلوشي الخاص",
+            "en": "Beef burger with arugula, pomegranate seeds, cheese, and Slushi special sauce."
           },
-          "price": {
-            "sandwich": 23,
-            "meal": 29
-          },
+          "calories": 660,
+          "price": { "sandwich": 23, "meal": 29 },
           "image": "assets/menu-final/arugula-pomegranate-burger.webp",
+          "frame": "burger",
           "confidence": "high"
         },
         {
           "id": "ribs-beef-burger",
-          "name": {
-            "ar": "برجر لحم أضلاع",
-            "en": "Ribs Beef Burger"
+          "name": { "ar": "برجر لحم أضلاع", "en": "Ribs Beef Burger" },
+          "description": {
+            "ar": "لحم أضلاع مُدخن ومطبوخ بالبطئ لأكثر من 8 ساعات بصوص الباربيكو ولمسة سلوشي الخاصة",
+            "en": "Smoked beef ribs cooked slowly for more than 8 hours with barbecue sauce and a special Slushi touch."
           },
-          "price": {
-            "sandwich": 46,
-            "meal": 52
-          },
+          "calories": 980,
+          "price": { "sandwich": 46, "meal": 52 },
           "image": "assets/menu-final/ribs-beef-burger.webp",
+          "frame": "burger",
           "confidence": "high"
         },
         {
           "id": "keto-beef",
-          "name": {
-            "ar": "لحم كيتو",
-            "en": "Keto Beef Burger"
+          "name": { "ar": "لحم كيتو", "en": "Keto Beef Burger" },
+          "description": {
+            "ar": "100 غرام من لحم بلاك انجوس الاسترالي مع الخس والجبن والطماطم، بدون خبز.",
+            "en": "100g Australian Black Angus beef with lettuce, cheese, and tomato, served without a bun."
           },
-          "price": {
-            "sandwich": 20,
-            "meal": 26
-          },
+          "calories": 480,
+          "price": { "sandwich": 20, "meal": 26 },
           "image": null,
-          "confidence": "high-for-price-low-for-photo",
-          "note": "No confident new-photo match. Do not assign a wrong burger photo."
+          "frame": "burger",
+          "confidence": "high-for-price-low-for-photo"
         }
       ]
     },
     {
       "id": "ribs-steaks",
-      "name": {
-        "ar": "الأضلاع والستيك",
-        "en": "Ribs & Steaks"
-      },
+      "name": { "ar": "الأضلاع والستيك", "en": "Ribs & Steaks" },
       "items": [
         {
           "id": "ribs",
-          "name": {
-            "ar": "أضلاع",
-            "en": "Ribs"
+          "name": { "ar": "أضلاع", "en": "Ribs" },
+          "description": {
+            "ar": "أضلاع لحم بلاك أنجوس استرالي مطبوخه لأكثر من 8 ساعات بنكهة مُدخنة بصوص الباربكيو الخاص تُقدم مع كرات البطاطس والذُرة وصوص الباربيكو",
+            "en": "Australian Black Angus beef ribs cooked for more than 8 hours with a smoky flavor and our special barbecue sauce, served with potato balls, corn, and barbecue sauce."
           },
-          "price": {
-            "single": 86
-          },
+          "calories": 1100,
+          "price": { "single": 86 },
           "image": "assets/menu-final/ribs.webp",
+          "frame": "plate",
           "confidence": "high"
         },
         {
           "id": "tenderloin-steak",
-          "name": {
-            "ar": "ستيك تندرلوين",
-            "en": "Tenderloin Steak"
+          "name": { "ar": "ستيك تندرلوين", "en": "Tenderloin Steak" },
+          "description": {
+            "ar": "يقدم مع البطاطس المقلية والذرة وصوص الباربكيو الخاص",
+            "en": "Served with fries, corn, and our special barbecue sauce."
           },
-          "price": {
-            "single": 68
+          "note": {
+            "ar": "متوسط الاستواء أو حسب الطلب",
+            "en": "Medium doneness or upon request"
           },
+          "calories": 850,
+          "price": { "single": 68 },
           "image": "assets/menu-final/tenderloin-steak.webp",
-          "confidence": "medium",
-          "note": "Uses one of two edited variants from the same photographed steak source."
+          "frame": "steak",
+          "confidence": "high"
         },
         {
           "id": "ribeye-steak",
-          "name": {
-            "ar": "ستيك ريب آي",
-            "en": "Ribeye Steak"
+          "name": { "ar": "ستيك ريب آي", "en": "Ribeye Steak" },
+          "description": {
+            "ar": "بترخيم 7 إلى 9 يقدم مع صوص الباربيكو الخاص والبطاطس المهروسة والخضار والذرة",
+            "en": "Marbling 7 to 9, served with our special barbecue sauce, mashed potatoes, vegetables, and corn."
           },
-          "price": {
-            "single": 119
+          "note": {
+            "ar": "متوسط الاستواء أو حسب الطلب",
+            "en": "Medium doneness or upon request"
           },
+          "calories": 1050,
+          "price": { "single": 119 },
           "image": "assets/menu-final/ribeye-steak.webp",
-          "confidence": "medium",
-          "note": "Uses one of two edited variants from the same photographed steak source."
+          "frame": "steak",
+          "confidence": "medium"
+        }
+      ]
+    },
+    {
+      "id": "appetizers",
+      "name": { "ar": "المقبلات", "en": "Appetizers" },
+      "items": [
+        {
+          "id": "dynamite-shrimp",
+          "name": { "ar": "ديناميت شريمب", "en": "Dynamite Shrimp" },
+          "description": {
+            "ar": "روبيان مقرمش مغطى بصوص الديناميت الخاص، يُقدّم مع شرائح الليمون وصوص جانبي.",
+            "en": "Crispy shrimp coated with our signature dynamite sauce, served with fresh lemon and a side sauce."
+          },
+          "calories": 620,
+          "price": { "single": 38 },
+          "image": "assets/menu-final/dynamite-shrimp.jpg",
+          "frame": "shrimp",
+          "confidence": "high"
         }
       ]
     },
     {
       "id": "sides-salads",
-      "name": {
-        "ar": "الفرايز والسلطات",
-        "en": "Fries & Salads"
-      },
+      "name": { "ar": "الفرايز والسلطات", "en": "Fries & Salads" },
       "items": [
         {
           "id": "slushi-fries",
-          "name": {
-            "ar": "سلوشي فرايز",
-            "en": "Slushi Fries"
+          "name": { "ar": "سلوشي فرايز", "en": "Slushi Fries" },
+          "description": {
+            "ar": "بطاطس مقلية مع قطع الدجاج وصوص سلوشي مع خلطة سلوشي الخاصة والجبنة المعتقة",
+            "en": "French fries topped with chicken pieces, Slushi sauce, Slushi special mix, and aged cheese."
           },
-          "price": {
-            "single": 19
-          },
+          "calories": 520,
+          "price": { "single": 19 },
           "image": "assets/menu-final/slushi-fries.webp",
-          "confidence": "medium"
+          "frame": "plate",
+          "confidence": "high"
         },
         {
           "id": "jalapeno-fries",
-          "name": {
-            "ar": "هلابينو فرايز",
-            "en": "Jalapeño Fries"
+          "name": { "ar": "هلابينو فرايز", "en": "Jalapeño Fries" },
+          "description": {
+            "ar": "بطاطس بصوص الجبن وشرائح الهالابينو.",
+            "en": "Fries with cheese sauce and jalapeño slices."
           },
-          "price": {
-            "single": 14
-          },
+          "calories": 480,
+          "price": { "single": 14 },
           "image": "assets/menu-final/jalapeno-fries.webp",
+          "frame": "plate",
           "confidence": "high"
         },
         {
           "id": "brisket-fries",
-          "name": {
-            "ar": "بريسكت فرايز",
-            "en": "Brisket Fries"
+          "name": { "ar": "بريسكت فرايز", "en": "Brisket Fries" },
+          "description": {
+            "ar": "بطاطس مقلية مُغطاة بلحم البريسكت المدخن المطبوخة بالبطيء والصوصات الخاصة وجبن البارميزان",
+            "en": "French fries topped with smoked slow-cooked brisket, special sauces, and parmesan cheese."
           },
-          "price": {
-            "single": 23
-          },
+          "calories": 720,
+          "price": { "single": 23 },
           "image": "assets/menu-final/brisket-fries.webp",
+          "frame": "plate",
+          "confidence": "high"
+        },
+        {
+          "id": "french-fries",
+          "name": { "ar": "بطاطس مقلية", "en": "French Fries" },
+          "description": {
+            "ar": "بطاطس مقلية ذهبية مقرمشة، تُقدّم ساخنة.",
+            "en": "Golden crispy french fries, served hot."
+          },
+          "calories": 360,
+          "price": { "single": 10 },
+          "image": "assets/menu-final/french-fries.jpg",
+          "frame": "plate",
+          "confidence": "high"
+        },
+        {
+          "id": "sweet-potato-fries",
+          "name": { "ar": "بطاطا حلوة", "en": "Sweet Potato Fries" },
+          "description": {
+            "ar": "بطاطا حلوة مقرمشة من الخارج وطرية من الداخل، تُقدّم ساخنة.",
+            "en": "Crispy sweet potato fries with a soft center, served hot."
+          },
+          "calories": 320,
+          "price": { "single": 10 },
+          "image": "assets/menu-final/sweet-potato-fries.webp",
+          "frame": "plate",
+          "confidence": "medium"
+        },
+        {
+          "id": "potato-balls",
+          "name": { "ar": "كرات البطاطس", "en": "Potato Balls" },
+          "description": {
+            "ar": "كرات بطاطس ذهبية مقرمشة من الخارج وطرية من الداخل، تُقدّم مع الصوص.",
+            "en": "Golden crispy potato balls with a soft center, served with sauce."
+          },
+          "calories": 420,
+          "price": { "single": 14 },
+          "image": "assets/menu-final/potato-balls.webp",
+          "frame": "plate",
           "confidence": "high"
         },
         {
           "id": "arugula-pomegranate-salad",
-          "name": {
-            "ar": "سلطة جرجير رمان",
-            "en": "Arugula & Pomegranate Salad"
+          "name": { "ar": "سلطة جرجير رمان", "en": "Arugula & Pomegranate Salad" },
+          "description": {
+            "ar": "جرجير طازج مع حبات الرمان الغنية بالعصارة، ممزوج بصلصة مميزة تمنح السلطة توازناً رائعاً بين النكهة المنعشة والحموضة الخفيفة",
+            "en": "Fresh arugula with juicy pomegranate seeds, tossed in a distinctive dressing that creates a refreshing and lightly tangy balance."
           },
-          "price": {
-            "single": 16
-          },
+          "calories": 220,
+          "price": { "single": 16 },
           "image": "assets/menu-final/arugula-pomegranate-salad.webp",
+          "frame": "salad",
           "confidence": "high"
         },
         {
           "id": "slushi-feta-salad",
-          "name": {
-            "ar": "سلطة فيتا سلوشي",
-            "en": "Slushi Feta Salad"
+          "name": { "ar": "سلطة فيتا سلوشي", "en": "Slushi Feta Salad" },
+          "description": {
+            "ar": "سلطة خضراء مع مكعبات الفيتا والطماطم الكرزية.",
+            "en": "Green salad with feta cubes and cherry tomatoes."
           },
-          "price": {
-            "single": 18
-          },
+          "calories": 280,
+          "price": { "single": 18 },
           "image": "assets/menu-final/slushi-feta-salad.webp",
+          "frame": "salad",
           "confidence": "high"
         }
       ]
     },
     {
       "id": "sliders",
-      "name": {
-        "ar": "السلايدر",
-        "en": "Sliders"
-      },
+      "name": { "ar": "السلايدر", "en": "Sliders" },
       "items": [
         {
           "id": "slider-beef",
-          "name": {
-            "ar": "برجر سلايدر لحم",
-            "en": "Beef Slider"
+          "name": { "ar": "سلايدر لحم", "en": "Beef Slider" },
+          "description": {
+            "ar": "سلايدر لحم صغير بصوص الكلاسيك بالجبن والمخلل والخس",
+            "en": "Mini beef slider with classic sauce, cheese, pickles, and lettuce."
           },
-          "price": {
-            "sandwich": 12,
-            "meal": 16
-          },
-          "image": "assets/menu-final/slider-beef.webp",
-          "confidence": "high",
-          "note": "Crop derived from the supplied mixed slider photo."
+          "calories": 380,
+          "price": { "sandwich": 12, "meal": 16 },
+          "image": "assets/menu-final/slider-beef.jpg",
+          "frame": "slider",
+          "confidence": "high"
         },
         {
           "id": "slider-chicken",
-          "name": {
-            "ar": "برجر سلايدر دجاج",
-            "en": "Chicken Slider"
+          "name": { "ar": "سلايدر دجاج", "en": "Chicken Slider" },
+          "description": {
+            "ar": "صدر دجاج ميني مُقرمش مع صوص سلوشي والجبن والخس",
+            "en": "Mini crispy chicken breast with Slushi sauce, cheese, and lettuce."
           },
-          "price": {
-            "sandwich": 12,
-            "meal": 16
-          },
-          "image": "assets/menu-final/slider-chicken.webp",
-          "confidence": "high",
-          "note": "Crop derived from the supplied mixed slider photo."
+          "calories": 400,
+          "price": { "sandwich": 12, "meal": 16 },
+          "image": "assets/menu-final/slider-chicken.jpg",
+          "frame": "slider",
+          "confidence": "high"
         },
         {
           "id": "slider-mix",
-          "name": {
-            "ar": "برجر سلايدر مكس",
-            "en": "Mixed Sliders"
+          "name": { "ar": "سلايدر مكس", "en": "Mixed Sliders" },
+          "description": {
+            "ar": "سلايدر لحم وسلايدر دجاج يُقدّمان معاً.",
+            "en": "A pair of sliders: one beef and one chicken."
           },
-          "price": {
-            "sandwich": 24,
-            "meal": 28
-          },
+          "calories": 760,
+          "price": { "sandwich": 24, "meal": 28 },
           "image": "assets/menu-final/slider-mix.webp",
+          "frame": "slider-mix",
+          "confidence": "high"
+        }
+      ]
+    },
+    {
+      "id": "wraps",
+      "name": { "ar": "الراب", "en": "Wraps" },
+      "items": [
+        {
+          "id": "wrap",
+          "name": { "ar": "راب", "en": "Wrap" },
+          "description": {
+            "ar": "راب محشو بالدجاج المقرمش والخس والطماطم والصوص يُقدم مقطوعاً",
+            "en": "A wrap filled with crispy chicken, lettuce, tomato, and sauce, served cut into pieces."
+          },
+          "calories": 640,
+          "price": { "single": 12 },
+          "image": "assets/menu-final/wrap.jpg",
+          "frame": "plate",
           "confidence": "high"
         }
       ]
     },
     {
       "id": "sauces",
-      "name": {
-        "ar": "الصوصات",
-        "en": "Sauces"
-      },
+      "name": { "ar": "الصوصات", "en": "Sauces" },
       "displayMode": "compact-options-no-photo-binding",
       "priceEach": 3,
       "items": [
         {
           "id": "sauce-slushi",
-          "name": {
-            "ar": "صوص سلوشي",
-            "en": "Slushi Sauce"
-          }
+          "name": { "ar": "صوص سلوشي", "en": "Slushi Sauce" },
+          "description": {
+            "ar": "صوص البيت الخاص بتوقيع سلوشي.",
+            "en": "The house signature Slushi sauce."
+          },
+          "image": "assets/menu-final/sauce-slushi.jpg"
         },
         {
           "id": "sauce-classic",
-          "name": {
-            "ar": "صوص كلاسيك",
-            "en": "Classic Sauce"
-          }
+          "name": { "ar": "صوص كلاسيك", "en": "Classic Sauce" },
+          "description": {
+            "ar": "صوص كلاسيكي كريمي يناسب البرجر.",
+            "en": "A creamy classic sauce for burgers."
+          },
+          "image": "assets/menu-final/sauce-classic.jpg"
         },
         {
           "id": "sauce-dynamite",
-          "name": {
-            "ar": "صوص داينمت",
-            "en": "Dynamite Sauce"
-          }
+          "name": { "ar": "صوص داينمت", "en": "Dynamite Sauce" },
+          "description": {
+            "ar": "صوص حار كريمي بنكهة الديناميت.",
+            "en": "A creamy, spicy dynamite-style sauce."
+          },
+          "image": "assets/menu-final/sauce-dynamite.jpg"
         },
         {
           "id": "sauce-honey-mustard",
-          "name": {
-            "ar": "صوص الخردل بالعسل",
-            "en": "Honey Mustard Sauce"
-          }
+          "name": { "ar": "صوص هاني ماسترد", "en": "Honey Mustard Sauce" },
+          "description": {
+            "ar": "صوص الخردل مع لمسة عسل.",
+            "en": "Mustard sauce with a touch of honey."
+          },
+          "image": "assets/menu-final/sauce-honey-mustard.jpg"
         },
         {
           "id": "sauce-truffle",
-          "name": {
-            "ar": "صوص الفقع",
-            "en": "Truffle Sauce"
-          }
+          "name": { "ar": "صوص الفقع", "en": "Truffle Sauce" },
+          "description": {
+            "ar": "صوص بنكهة الفقع.",
+            "en": "Sauce with truffle flavor."
+          },
+          "image": "assets/menu-final/sauce-truffle.jpg"
         },
         {
           "id": "sauce-maple",
-          "name": {
-            "ar": "صوص الميبل",
-            "en": "Maple Sauce"
-          }
+          "name": { "ar": "صوص الميبل", "en": "Maple Sauce" },
+          "description": {
+            "ar": "صوص الميبل الحلو الخفيف.",
+            "en": "A lightly sweet maple sauce."
+          },
+          "image": "assets/menu-final/sauce-maple.jpg"
         }
-      ],
-      "note": "Names come from the old menu; current user instruction overrides all sauce prices to 3 SAR. Eight sauce photos are preserved as generic references because exact photo-to-name mapping is not explicit."
+      ]
     },
     {
       "id": "drinks",
-      "name": {
-        "ar": "المشروبات",
-        "en": "Drinks"
-      },
+      "name": { "ar": "المشروبات", "en": "Drinks" },
       "items": [
         {
-          "id": "coca-cola",
-          "name": {
-            "ar": "كوكاكولا",
-            "en": "Coca-Cola"
-          },
-          "price": {
-            "single": 3
-          },
+          "id": "slushi-mojito",
+          "name": { "ar": "موهيتو سلوشي", "en": "Slushi Mojito" },
+          "description": { "ar": "موهيتو سلوشي منعش بالنعناع والليمون.", "en": "A refreshing Slushi mint and lime mojito." },
+          "price": { "single": 10 },
           "image": null
         },
         {
-          "id": "sprite",
-          "name": {
-            "ar": "سبرايت",
-            "en": "Sprite"
-          },
-          "price": {
-            "single": 3
-          },
+          "id": "pepsi",
+          "name": { "ar": "ببسي", "en": "Pepsi" },
+          "description": { "ar": "مشروب غازي مثلّج.", "en": "Chilled soft drink." },
+          "price": { "single": 3 },
           "image": null
         },
         {
-          "id": "diet-cola",
-          "name": {
-            "ar": "كولا دايت",
-            "en": "Diet Cola"
-          },
-          "price": {
-            "single": 3
-          },
+          "id": "dew",
+          "name": { "ar": "ديو", "en": "Dew" },
+          "description": { "ar": "مشروب غازي مثلّج.", "en": "Chilled soft drink." },
+          "price": { "single": 3 },
           "image": null
         },
         {
-          "id": "fanta-orange",
-          "name": {
-            "ar": "فانتا برتقال",
-            "en": "Fanta Orange"
-          },
-          "price": {
-            "single": 3
-          },
+          "id": "citrus",
+          "name": { "ar": "حمضيات", "en": "Citrus" },
+          "description": { "ar": "مشروب غازي بنكهة الحمضيات.", "en": "Citrus-flavored soft drink." },
+          "price": { "single": 3 },
           "image": null
         },
         {
-          "id": "mojito",
-          "name": {
-            "ar": "موهيتو",
-            "en": "Mojito"
-          },
-          "price": {
-            "single": 10
-          },
+          "id": "seven-up",
+          "name": { "ar": "سفن اب", "en": "7 Up" },
+          "description": { "ar": "مشروب غازي مثلّج.", "en": "Chilled soft drink." },
+          "price": { "single": 3 },
+          "image": null
+        },
+        {
+          "id": "diet-pepsi",
+          "name": { "ar": "ببسي دايت", "en": "Diet Pepsi" },
+          "description": { "ar": "مشروب غازي دايت مثلّج.", "en": "Chilled diet soft drink." },
+          "price": { "single": 3 },
           "image": null
         }
       ]
     }
-  ],
-  "rules": {
-    "currentPricesOverrideLegacy": true,
-    "doNotInventMissingPhotos": true,
-    "doNotInventDescriptionsCaloriesAllergens": true,
-    "noSaucePhotoBindingWithoutManualConfirmation": true
-  }
+  ]
 }

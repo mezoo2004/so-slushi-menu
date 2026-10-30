@@ -26,6 +26,7 @@ export type Product = {
   pricePending?: boolean
   available: boolean
   badge?: LocalizedString
+  note?: LocalizedString
   allergens?: LocalizedString[]
   frame?: ImageFrame
 }

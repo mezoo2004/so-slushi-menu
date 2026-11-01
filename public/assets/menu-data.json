@@ -86,7 +86,7 @@
             "en": "Fried chicken breast with lettuce, cheese, and our special honey mustard sauce."
           },
           "calories": 700,
-          "pricePending": true,
+          "price": { "sandwich": 21, "meal": 27 },
           "image": "assets/menu-final/honey-mustard-chicken.jpg",
           "frame": "burger",
           "confidence": "high"
@@ -239,7 +239,7 @@
           "name": { "ar": "ستيك تندرلوين", "en": "Tenderloin Steak" },
           "description": {
             "ar": "يقدم مع البطاطس المقلية والذرة وصوص الباربكيو الخاص",
-            "en": "Served with fries, corn, and our special barbecue sauce."
+            "en": "Served with French fries, corn, and our special barbecue sauce."
           },
           "note": {
             "ar": "متوسط الاستواء أو حسب الطلب",
@@ -340,7 +340,7 @@
             "en": "Golden crispy french fries, served hot."
           },
           "calories": 360,
-          "price": { "single": 10 },
+          "price": { "single": 6 },
           "image": "assets/menu-final/french-fries.jpg",
           "frame": "plate",
           "confidence": "high"

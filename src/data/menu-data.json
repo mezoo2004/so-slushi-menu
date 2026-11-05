@@ -489,12 +489,12 @@
         },
         {
           "id": "sauce-dynamite",
-          "name": { "ar": "صوص داينمت", "en": "Dynamite Sauce" },
+          "name": { "ar": "صوص ديناميت", "en": "Dynamite Sauce" },
           "description": {
             "ar": "صوص حار كريمي بنكهة الديناميت.",
             "en": "A creamy, spicy dynamite-style sauce."
           },
-          "image": "assets/menu-final/sauce-dynamite.jpg"
+          "image": null
         },
         {
           "id": "sauce-honey-mustard",
@@ -506,13 +506,13 @@
           "image": "assets/menu-final/sauce-honey-mustard.jpg"
         },
         {
-          "id": "sauce-truffle",
-          "name": { "ar": "صوص الفقع", "en": "Truffle Sauce" },
+          "id": "sauce-mushroom",
+          "name": { "ar": "صوص الماشروم", "en": "Mushroom Sauce" },
           "description": {
-            "ar": "صوص بنكهة الفقع.",
-            "en": "Sauce with truffle flavor."
+            "ar": "صوص كريمي بنكهة الماشروم.",
+            "en": "A creamy mushroom sauce."
           },
-          "image": "assets/menu-final/sauce-truffle.jpg"
+          "image": "assets/menu-final/sauce-mushroom.jpg"
         },
         {
           "id": "sauce-maple",
@@ -522,6 +522,24 @@
             "en": "A lightly sweet maple sauce."
           },
           "image": "assets/menu-final/sauce-maple.jpg"
+        },
+        {
+          "id": "sauce-bbq",
+          "name": { "ar": "صوص الباربكيو", "en": "BBQ Sauce" },
+          "description": {
+            "ar": "صوص الباربكيو الخاص.",
+            "en": "Our special barbecue sauce."
+          },
+          "image": "assets/menu-final/sauce-bbq.jpg"
+        },
+        {
+          "id": "sauce-cheese",
+          "name": { "ar": "صوص الجبن", "en": "Cheese Sauce" },
+          "description": {
+            "ar": "صوص جبن ذهبي ذائب.",
+            "en": "Golden melted cheese sauce."
+          },
+          "image": "assets/menu-final/sauce-cheese.jpg"
         }
       ]
     },
